@@ -1,3 +1,28 @@
+<style>
+
+global-font {
+    font-style: normal;
+    font-size: 15px;
+    font-family: 'Iosevka', 'monospace';
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #31e20d;
+}
+
+p {
+    color: #1d9eaf;
+    font-size: 15px;
+}
+
+.cli_blue {
+    color: 
+}
+
+</style>
+
 ## Hi there 👋
 ### I am Puscas Raul, a final-year CS Student @UBB-Cluj who is passionate about anything technology-related.  
 ### My interests span from Systems-Programming to Fullstack Development and more.
