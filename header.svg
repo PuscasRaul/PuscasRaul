@@ -1,68 +1,88 @@
-<svg fill="none" width="100%" height="100vh" xmlns="http://www.w3.org/2000/svg">
- <foreignObject width="100%" height="100%">
-  <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        .wrapper {
-          /* FIX 1: Use 100vh (full screen) instead of 1000vh */
-          height: 50vh;
-          width: auto;
-          display: grid;
-          /* Align content slightly down from the top */
-          align-content: start; 
-          padding: 10px;
-        }
+<svg fill="none" viewBox="0 0 900 250" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* 1. Define the font and color */
+    text {
+      font-family: 'Courier New', monospace;
+      font-size: 18px;
+      font-weight: bold;
+      fill: #00c40d;
+    }
 
-        .run_command {
-          width: 20ch; 
-          height: 100%;
-          
-          animation: typing 1.5s steps(20), blink .5s step-end infinite alternate;
-          white-space: nowrap;
-          overflow: hidden;
-          border-right: 3px solid;
-          font-family: iosevka, monospace; /* Added fallback font */
-          font-size: 22px;
-          color: #00c40d;
-        }
+    /* 2. The Typing Animation (expands the mask width) */
+    @keyframes typeLine1 {
+      to { width: 250px; } /* Width of 1st line */
+    }
+    
+    @keyframes typeLine2 {
+      to { width: 900px; } /* Width of 2nd line block */
+    }
+    
+    /* 3. The Blinking Cursor Animation */
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+    
+    @keyframes hideCursor {
+      to { opacity: 0; }
+    }
 
-        .output_command {
-          /* FIX 2: Width matches content length approx */
-          width: 65ch; 
-          height: 100%;
-          padding: 2px;
-          word-wrap: break-word;
-          /* FIX 3: Increased steps to match the longer text length */
-          animation: typing 3s steps(60) 1.5s forwards, blink .5s step-end infinite alternate;
-          overflow: hidden;
-          border-right: 3px solid transparent; /* Hide cursor initially */
-          font-family: iosevka, monospace;
-          font-size: 15px;
-          color: #00c40d;
-          opacity: 0; /* Hide initially */
-        }
+    /* 4. Apply animations to masks */
+    #mask-rect-1 {
+      width: 0;
+      animation: typeLine1 1.5s steps(25, end) forwards;
+    }
 
-        @keyframes typing {
-          from { width: 0; opacity: 1; border-color: rgba(254,0,255,1); }
-          to { width: 100%; opacity: 1; border-color: transparent; }
-        }
+    #mask-rect-2 {
+      width: 0;
+      animation: typeLine2 3s steps(60, end) 1.5s forwards;
+    }
 
-        @keyframes blink {
-          from, to { border-color: transparent }
-          50% { border-color: rgba(254,0,255,1); }
-        }
+    /* 5. Cursor Logic */
+    .cursor {
+      fill: #00c40d;
+    }
+    
+    .cursor-1 {
+      animation: blink 1s infinite, hideCursor 0.1s 1.5s forwards;
+    }
+    
+    .cursor-2 {
+      opacity: 0; /* Hidden initially */
+      animation: blink 1s infinite 1.5s; /* Starts blinking when line 2 starts */
+    }
 
-      </style>
-      <div class="wrapper">
-        
-        <div class="run_command">
-          > curl PuscasRaul.sh
-        </div>
+  </style>
 
-        <div class="output_command">
-          A CS student enrolled @UBB-Cluj passionate in technology. Main programming languages: C, C++ and Python. Interested in Systems programming, Computer Vision and AI. 
-        </div>
+  <rect width="100%" height="100%" fill="#0d1117" rx="10" />
 
-      </div>
-  </div>
- </foreignObject>
+  <g transform="translate(30, 50)">
+    <text clip-path="url(#clip-1)">> curl puscasraul.sh</text>
+    
+    <defs>
+      <clipPath id="clip-1">
+        <rect id="mask-rect-1" x="0" y="-20" height="40" width="0" />
+      </clipPath>
+    </defs>
+    
+    <rect class="cursor-1" x="230" y="-15" width="12" height="22" />
+  </g>
+
+
+  <g transform="translate(30, 90)">
+    <text clip-path="url(#clip-2)">
+      <tspan x="0" dy="0">A CS student enrolled @UBB-Cluj.</tspan>
+      <tspan x="0" dy="1.6em">Passionate about Systems, CV &amp; AI.</tspan>
+      <tspan x="0" dy="1.6em">Languages: C, C++, Python.</tspan>
+    </text>
+
+    <defs>
+      <clipPath id="clip-2">
+        <rect id="mask-rect-2" x="0" y="-20" height="200" width="0" />
+      </clipPath>
+    </defs>
+    
+    <rect class="cursor-2" x="310" y="70" width="12" height="22" />
+  </g>
+
 </svg>
