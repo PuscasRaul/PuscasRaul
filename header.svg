@@ -53,9 +53,9 @@
 
       </style>
       <div class="wrapper">
-
-        <div class="output_command">
-          A CS student enrolled @UBB-Cluj passionate in technology. Main programming languages: C, C++ and Python. Interested in Systems programming, Computer Vision and AI.
+        
+        <div class="run_command">
+          > curl PuscasRaul.sh
         </div>
 
       </div>
