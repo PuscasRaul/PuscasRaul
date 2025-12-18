@@ -4,7 +4,7 @@
       <style>
         .wrapper {
           /* FIX 1: Use 100vh (full screen) instead of 1000vh */
-          height: 100vh;
+          height: 100%;
           width: auto;
           display: grid;
           /* Align content slightly down from the top */
@@ -53,11 +53,6 @@
 
       </style>
       <div class="wrapper">
-        /*
-        <div class="run_command">
-          > curl puscasraul.sh
-        </div>
-        */
 
         <div class="output_command">
           A CS student enrolled @UBB-Cluj passionate in technology. Main programming languages: C, C++ and Python. Interested in Systems programming, Computer Vision and AI.
