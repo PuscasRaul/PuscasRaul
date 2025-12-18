@@ -1,6 +1,6 @@
 <div align="left">
  <a class="link" href="https://github.com/PuscasRaul/PuscasRaul?tab=readme-ov-file">
-  <img class="image" src="header.svg" alt="Click to see the source">
+  <img class="image" width="100%" height="250px" src="header.svg" alt="Click to see the source">
  </a>
 </div>
 
