@@ -10,7 +10,6 @@
           /* Align content slightly down from the top */
           align-content: start; 
           padding: 10px;
-          background-color: #1e1e1e; /* Optional: adds a terminal bg look */
         }
 
         .run_command {
