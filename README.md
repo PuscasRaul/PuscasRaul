@@ -1,4 +1,3 @@
-
 ![Terminal Bio](header.svg)
 
 <!--
