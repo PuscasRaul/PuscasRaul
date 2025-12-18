@@ -1,17 +1,8 @@
-<div align="left" height=100px>
+<div align="left">
  <a class="link" href="https://github.com/codeflowjs/codeflowjs/blame/main/header.svg">
-  <img class="image" src="header.svg" alt="Click to see the source">
+  <img class="image" width="100%" height="100px" src="header.svg" alt="Click to see the source">
  </a>
 </div>
-
-## Hi there 👋
-### I am Puscas Raul, a final-year CS Student @UBB-Cluj who is passionate about anything technology-related.  
-### My interests span from Systems-Programming to Fullstack Development and more.
-
-## About me
-- Location: Cluj-Napoca
-
-## Skills
 
 <!--
 **PuscasRaul/PuscasRaul** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
