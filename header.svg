@@ -27,7 +27,7 @@
     <text clip-path="url(#clip-2)">
       <tspan x="0" dy="0">A CS student enrolled @UBB-Cluj.</tspan>
       <tspan x="0" dy="1.6em">Passionate about Systems, Computer Vision &amp; AI.</tspan>
-      <tspan x="0" dy="1.6em">Languages: C, C++, Python.</tspan>
+      <tspan x="0" dy="1.6em">Favourite programming languages: C, C++, Python.</tspan>
     </text>
 
     <defs>
