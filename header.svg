@@ -13,10 +13,10 @@
         }
 
         .run_command {
-          width: 20ch; /* Adjusted to fit exactly */
+          width: 20ch; 
           height: 100%;
-          /* Steps roughly match char count */
-          animation: typing 1.5s steps(14), blink .5s step-end infinite alternate;
+          
+          animation: typing 1.5s steps(20), blink .5s step-end infinite alternate;
           white-space: nowrap;
           overflow: hidden;
           border-right: 3px solid;
@@ -41,7 +41,6 @@
           opacity: 0; /* Hide initially */
         }
 
-        /* Animation to reveal the second line */
         @keyframes typing {
           from { width: 0; opacity: 1; border-color: rgba(254,0,255,1); }
           to { width: 100%; opacity: 1; border-color: transparent; }
@@ -54,13 +53,16 @@
 
       </style>
       <div class="wrapper">
+        /*
         <div class="run_command">
           > curl puscasraul.sh
         </div>
+        */
 
         <div class="output_command">
           A CS student enrolled @UBB-Cluj passionate in technology. Main programming languages: C, C++ and Python. Interested in Systems programming, Computer Vision and AI.
         </div>
+
       </div>
   </div>
  </foreignObject>
