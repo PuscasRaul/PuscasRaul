@@ -1,5 +1,12 @@
 ## Hi there 👋
-### I am Puscas Raul, a final-year CS Student @UBB-Cluj
+### I am Puscas Raul, a final-year CS Student @UBB-Cluj who is passionate about anything technology-related.  
+### My interests span from Systems-Programming to Fullstack Development and more.
+
+## About me
+- Location: Cluj-Napoca
+
+## Skills
+
 <!--
 **PuscasRaul/PuscasRaul** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
