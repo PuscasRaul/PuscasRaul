@@ -1,5 +1,5 @@
 ## Hi there 👋
-
+### I am Puscas Raul, a final-year CS Student @UBB-Cluj
 <!--
 **PuscasRaul/PuscasRaul** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
