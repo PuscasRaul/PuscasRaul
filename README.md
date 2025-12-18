@@ -1,27 +1,8 @@
-<style>
-
-global-font {
-    font-style: normal;
-    font-size: 15px;
-    font-family: 'Iosevka', 'monospace';
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 22px;
-    color: #31e20d;
-}
-
-p {
-    color: #1d9eaf;
-    font-size: 15px;
-}
-
-.cli_blue {
-    color: 
-}
-
-</style>
+<div align="center">
+ <a class="link" href="https://github.com/codeflowjs/codeflowjs/blame/main/header.svg">
+  <img class="image" src="header.svg" alt="Click to see the source">
+ </a>
+</div>
 
 ## Hi there 👋
 ### I am Puscas Raul, a final-year CS Student @UBB-Cluj who is passionate about anything technology-related.  
