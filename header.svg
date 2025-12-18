@@ -4,7 +4,7 @@
       <style>
         .wrapper {
           /* FIX 1: Use 100vh (full screen) instead of 1000vh */
-          height: 75vh;
+          height: 100vh;
           width: auto;
           display: grid;
           /* Align content slightly down from the top */
