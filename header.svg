@@ -20,11 +20,6 @@
         </rect>
       </clipPath>
     </defs>
-    
-    <rect x="230" y="-15" width="12" height="22" fill="#00c40d" opacity="1">
-      <animate attributeName="opacity" values="1;0;1" dur="0.5s" repeatCount="indefinite" />
-      <set attributeName="opacity" to="0" begin="1.5s" fill="freeze" />
-    </rect>
   </g>
 
 
@@ -42,10 +37,5 @@
         </rect>
       </clipPath>
     </defs>
-    
-    <rect x="310" y="70" width="12" height="22" fill="#00c40d" opacity="0">
-      <set attributeName="opacity" to="1" begin="1.5s" fill="freeze" />
-      <animate attributeName="opacity" values="1;0;1" dur="0.5s" begin="1.5s" repeatCount="indefinite" />
-    </rect>
   </g>
 </svg>
