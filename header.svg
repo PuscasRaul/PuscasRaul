@@ -11,7 +11,7 @@
   </style>
 
   <g transform="translate(30, 50)">
-    <text clip-path="url(#clip-1)">> curl puscasraul.sh</text>
+    <text clip-path="url(#clip-1)">> man puscasraul.sh</text>
     
     <defs>
       <clipPath id="clip-1">
