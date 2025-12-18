@@ -1,71 +1,30 @@
 <svg fill="none" viewBox="0 0 900 250" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#0d1117" rx="10" />
+
   <style>
-    /* 1. Define the font and color */
     text {
       font-family: 'Courier New', monospace;
       font-size: 18px;
       font-weight: bold;
       fill: #00c40d;
     }
-
-    /* 2. The Typing Animation (expands the mask width) */
-    @keyframes typeLine1 {
-      to { width: 250px; } /* Width of 1st line */
-    }
-    
-    @keyframes typeLine2 {
-      to { width: 900px; } /* Width of 2nd line block */
-    }
-    
-    /* 3. The Blinking Cursor Animation */
-    @keyframes blink {
-      0%, 50% { opacity: 1; }
-      51%, 100% { opacity: 0; }
-    }
-    
-    @keyframes hideCursor {
-      to { opacity: 0; }
-    }
-
-    /* 4. Apply animations to masks */
-    #mask-rect-1 {
-      width: 0;
-      animation: typeLine1 1.5s steps(25, end) forwards;
-    }
-
-    #mask-rect-2 {
-      width: 0;
-      animation: typeLine2 3s steps(60, end) 1.5s forwards;
-    }
-
-    /* 5. Cursor Logic */
-    .cursor {
-      fill: #00c40d;
-    }
-    
-    .cursor-1 {
-      animation: blink 1s infinite, hideCursor 0.1s 1.5s forwards;
-    }
-    
-    .cursor-2 {
-      opacity: 0; /* Hidden initially */
-      animation: blink 1s infinite 1.5s; /* Starts blinking when line 2 starts */
-    }
-
   </style>
-
-  <rect width="100%" height="100%" fill="#0d1117" rx="10" />
 
   <g transform="translate(30, 50)">
     <text clip-path="url(#clip-1)">> curl puscasraul.sh</text>
     
     <defs>
       <clipPath id="clip-1">
-        <rect id="mask-rect-1" x="0" y="-20" height="40" width="0" />
+        <rect x="0" y="-20" height="40" width="0">
+          <animate attributeName="width" from="0" to="250" dur="1.5s" begin="0s" fill="freeze" />
+        </rect>
       </clipPath>
     </defs>
     
-    <rect class="cursor-1" x="230" y="-15" width="12" height="22" />
+    <rect x="230" y="-15" width="12" height="22" fill="#00c40d" opacity="1">
+      <animate attributeName="opacity" values="1;0;1" dur="0.5s" repeatCount="indefinite" />
+      <set attributeName="opacity" to="0" begin="1.5s" fill="freeze" />
+    </rect>
   </g>
 
 
@@ -78,11 +37,15 @@
 
     <defs>
       <clipPath id="clip-2">
-        <rect id="mask-rect-2" x="0" y="-20" height="200" width="0" />
+        <rect x="0" y="-20" height="200" width="0">
+          <animate attributeName="width" from="0" to="900" dur="3s" begin="1.5s" fill="freeze" />
+        </rect>
       </clipPath>
     </defs>
     
-    <rect class="cursor-2" x="310" y="70" width="12" height="22" />
+    <rect x="310" y="70" width="12" height="22" fill="#00c40d" opacity="0">
+      <set attributeName="opacity" to="1" begin="1.5s" fill="freeze" />
+      <animate attributeName="opacity" values="1;0;1" dur="0.5s" begin="1.5s" repeatCount="indefinite" />
+    </rect>
   </g>
-
 </svg>
