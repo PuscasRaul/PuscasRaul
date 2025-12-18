@@ -1,9 +1,5 @@
-<div align="left">
- <a class="link" href="https://github.com/PuscasRaul/PuscasRaul?tab=readme-ov-file">
-  <img class="image" width="100%" height="250px" src="header.svg" alt="Click to see the source">
- </a>
-</div>
 
+![Terminal Bio](header.svg)
 
 <!--
 **PuscasRaul/PuscasRaul** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
